@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'NunitoBlack';
       src: url('../fonts/Nunito-Black.ttf');
@@ -35,7 +37,11 @@
 }
 
 
-
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 body{
     margin: 0;
@@ -56,8 +62,9 @@ nav{
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 15px;
- 
 }
+
+
 
 .titleContainer{
     width: 70%;
@@ -89,8 +96,8 @@ ul{
     display: flex;
     align-items: center;
     list-style-type: none;
-
 }
+
 .hyperlinks{
     text-decoration:none;
     font-family: NunitoBold;
@@ -103,7 +110,6 @@ h1{
     text-transform: uppercase;
     color: rgb(255, 255, 255);
     font-size: 55px;
-    padding-bottom: -15px;
 }
 h2{
     font-family: NunitoExtraLight;
@@ -111,33 +117,45 @@ h2{
     color: rgb(255, 255, 255);
     font-size: 40px;
     position: relative;
-    bottom:40px;
+    top:0;
+    }
+    
+    .wrapper nav {
+        display: block;
     }
 
-    .hamburgerMenu{
-        display: none;
+    .hyperlinks {
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: transform;
+        transition-property: transform;
+      }
+    
+    .hyperlinks:hover, .hyperlinks:focus, .hyperlinks:active {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
     }
-
-
-
 
 
     
-    @media (max-width: 2000px) and (min-width: 950px){
-    .test{
-        display: none;
-    }
+    @media (max-width: 3000px) and (min-width: 950px){
     #budgetLink{
         height: 6vh;
     }
     .hyperlinks{
-        font-size: 12px;
+        font-size: 0.8rem;
     }
     .hamburgerMenu{
         display: block;
     }
-    
-
+    .wrapper .open {
+        display: none;
+    }
 }
 
 
@@ -160,16 +178,21 @@ h2{
 
 
 @media (max-width: 450px) and (min-width: 200px){
+    #logo{
+        width: 40vw;
+        height: 5vh;
+    }
+
     .links{
         display: none;
     }
     #budgetLink{
         display: none;
     }
-   h1 , h2{
-    font-size: 18px;
-   }
-   h2{
-    bottom: 0px;
-   }
+    h1 , h2{
+        font-size: 18px;
+    }
+    h2{
+        bottom: 0px;
+    }
 }
