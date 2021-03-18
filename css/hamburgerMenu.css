@@ -56,8 +56,14 @@
     clip-path: circle(100%);
 }
 
+@media (max-width: 740px) and (min-width: 415px){
+    .wrapper nav .close {
+        padding-bottom:19px ;
+        font-size: 0.8rem;
+    }
+}
 
-@media (max-width: 300px) and (min-width: 200px){
+@media (max-width: 415px) and (min-width: 200px){
 
     .wrapper nav ul li a {
         font-size: 0.6rem;
@@ -76,7 +82,7 @@
         padding: 0;
     }
     .wrapper nav {
-        width: 150vw;
+        width: 100%;
     }
     .wrapper .open {
         background-color: rgb(255, 170, 11);
