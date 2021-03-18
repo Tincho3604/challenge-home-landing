@@ -15,7 +15,7 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
-    background: linear-gradient(45deg,#2d41f7,#83b4ff);
+    background: linear-gradient(45deg,#0a0a0a,#83b4ff);
     color: #fff;
     padding: 12px;
     clip-path: circle();
@@ -55,8 +55,15 @@
     clip-path: circle(100%);
 }
 
+@media (max-width: 600px) and (min-width: 500px){
+    .wrapper nav {
+        width: 150vw;
+    }
+}
+
 
 @media (max-width: 500px) and (min-width: 200px){
+
     .wrapper nav ul li a {
         font-size: 0.6rem;
     }
@@ -66,12 +73,17 @@
     }
     .wrapper .open {
         top: 10px;
-        right: 10px;
-        font-size: 0.9rem;
+        font-size: 2rem;
     }
     .wrapper{
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+    .wrapper nav {
+        width: 150vw;
+    }
+    .wrapper .open {
+        background-color: rgb(255, 170, 11);
     }
 }

@@ -17,7 +17,7 @@
 @font-face {
     font-family: 'NunitoBold';
     src: url('../fonts/Nunito-Bold.ttf');
-    font-weight: 600;
+    font-weight: 900;
     font-style: normal;
 
 }
@@ -140,15 +140,19 @@ h2{
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
-
-
+    @media (max-width: 3000px) and (min-width: 2000px){
+    .wrapper .open {
+        display: none;
+    }
+}
+ /* SECTION 1 */
     
-    @media (max-width: 3000px) and (min-width: 950px){
+    @media (max-width: 2000px) and (min-width: 950px){
     #budgetLink{
         height: 6vh;
     }
     .hyperlinks{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
     .hamburgerMenu{
         display: block;
@@ -156,6 +160,7 @@ h2{
     .wrapper .open {
         display: none;
     }
+   
 }
 
 
