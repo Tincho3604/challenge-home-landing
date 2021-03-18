@@ -61,7 +61,7 @@
         width: 50px;
         height: 50px;
     }
-    .test{
+    .imageIconContainer{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -85,6 +85,37 @@
 .grill3{
     display: flex;
 }
+
+
+
+
+.serviceIcons {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    width: 250px;
+    height: 150px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.serviceIcons:hover {
+    transition: 0.70s;
+    -webkit-transition: 0.70s;
+    -moz-transition: 0.70s;
+    -ms-transition: 0.70s;
+    -o-transition: 0.70s;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  } 
+
+
 
 
     @media (max-width: 2000px) and (min-width: 1200px){
@@ -126,14 +157,14 @@
             width: 20vw;
             height: 40vh;
         }
-        .test{
+        .imageIconContainer{
             width: 5vw;
             height: 10vh;
             justify-content: center;
             align-items: center;
         
         }
-        .test img{
+        .imageIconContainer img{
             justify-content: center;
             align-items: center;
             width: 40px;
@@ -198,14 +229,14 @@
         width: 20vw;
         height: 40vh;
     }
-    .test{
+    .imageIconContainer{
         width: 8vw;
         height: 10vh;
         justify-content: center;
         align-items: center;
     
     }
-    .test img{
+    .imageIconContainer img{
         justify-content: center;
         align-items: center;
         width: 40px;
@@ -258,7 +289,7 @@
             color: rgb(0, 0, 0);
         }
         
-        .test{
+        .imageIconContainer{
         width: 15vw;
         height: 10vh;
         }
