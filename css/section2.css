@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'NunitoRegular';
+    src: url('../fonts/Nunito-Regular.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NunitoBold';
+    src: url('../fonts/Nunito-Bold.ttf');
+    font-weight: 900;
+    font-style: normal;
+
+}
+
+#separator{
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    justify-content: center;
+    align-items: center;
+    background: rgb(31, 58, 148);
+    color: white;
+    font-family: NunitoRegular;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.articleContainer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.articleContainer img{
+width: 500px;
+}
+
+.infoArticleContainer h3{
+ color:rgb(31, 58, 148);
+ text-transform: uppercase;
+ font-family: NunitoBold;
+ font-weight: 900;
+}
+
+.infoArticleContainer p{
+    font-family: NunitoRegular;
+}
+
+@media (max-width: 1500px) and (min-width: 900px){
+    .articleContainer{
+        margin-bottom : 100px;
+    }
+    #separator{
+    margin-top: 100px;
+    }
+    .infoArticleContainer h3{
+        color:rgb(31, 58, 148);
+    }
+    .articleContainer img{
+        width: 250px;
+    }
+    .infoArticleContainer p{
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 900px) and (min-width: 700px){
+    .articleContainer{
+        margin-bottom : 100px;
+    }
+    #separator{
+    margin-top: 100px;
+    }
+    .infoArticleContainer h3{
+        color:rgb(31, 58, 148);
+    }
+    .articleContainer img{
+        width: 200px;
+    }
+    .infoArticleContainer p{
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 300px){
+    #separator{
+        margin-top: 600px;
+        font-size: 1rem;
+        }
+    
+        .articleContainer{
+            flex-direction: column;
+        }
+        .infoArticleContainer{
+            margin-bottom: 15px;
+        }
+        .articleContainer img{
+            width: 200px;
+        }
+        .infoArticleContainer p{
+            font-size: 15px;
+        }
+        .infoArticleContainer h3{
+            color:rgb(31, 58, 148);
+            font-size: 15px;
+        }
+}

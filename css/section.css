@@ -74,15 +74,15 @@
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
-    .grilla{
+    .grill{
         display: flex;
     }
-.grilla2{
+.grill2{
 
     display: flex;
 }
 
-.grilla3{
+.grill3{
     display: flex;
 }
 
@@ -107,13 +107,13 @@
         font-size: 15px;
             }
     
-        .grilla{
+        .grill{
             height: 35vh;
         }
-        .grilla2{
+        .grill2{
             width: 30vw;
         }
-        .grilla3{
+        .grill3{
             width: 30vw;
         }
         .empresaContainer{
@@ -161,14 +161,14 @@
             position: relative;
             height: 40vh;
         }
-    .grilla2{
+    .grill2{
         align-items: center;
         width: 30vw;
         height: 20vh;
         font-size: 50px;
         display: flex;
     }
-    .grilla3{
+    .grill3{
         display: flex;
         align-items: center;
         height: 20vh;
@@ -218,7 +218,7 @@
 
 
     @media (max-width: 600px) and (min-width: 300px){
-        .grilla{
+        .grill{
             flex-direction: column;
         }
 
