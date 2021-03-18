@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'NunitoRegular';
+    src: url('../fonts/Nunito-Regular.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'NunitoBlack';
+      src: url('../fonts/Nunito-Black.ttf');
+      font-weight: 200;
+      font-style: normal;
+   
+}
+@font-face {
+    font-family: 'NunitoRegular';
+    src: url('../fonts/Nunito-Regular.ttf');
+    font-weight: 600;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'NunitoBold';
+    src: url('../fonts/Nunito-Bold.ttf');
+    font-weight: 900;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'NunitoLightItalic';
+      src: url('../fonts/Nunito-LightItalic.ttf');
+      font-weight: 800;
+      font-style: normal;
+   
+}
+@font-face {
+    font-family: 'NunitoExtraLight';
+    src: url('../fonts/Nunito-ExtraLight.ttf');
+    font-weight: 900;
+    font-style: normal;
+
+
+}
+
+.formContainer{
+    background-image: url('../images/bg/bg-contacto.jpg');
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-size: cover;
+}
+
+.formContainer h2 {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: NunitoRegular;
+    font-weight: 200;
+}
+
+.formContainer p {
+    font-family: NunitoExtraLight;
+    font-weight: 200;
+    color: rgb(255, 255, 255);
+    opacity: 0.9;
+    font-size: 19px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+form h2{
+    text-align: center;
+}
+.inputsLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vw;
+    height: 30vh;
+}
+.inputsContainer{
+display: flex;
+}
+.textAreaContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18vw;
+    height: 30vh;
+}
+.inputs{
+    height: 5vh;
+    border-radius: 5px;
+    border: none;
+    text-align: left;
+    padding-left:15px;
+  
+}
+.textarea{
+    height: 23vh;
+    width: 16vw;
+    border-radius: 5px;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+
+.submitButton{
+    background: rgb(16, 42, 129);
+    width: 6vw;
+    height: 4vh;
+    margin-bottom: 30px;
+    border-radius: 3px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-family: NunitoRegular;
+}
+
+@media (max-width: 1200px) and (min-width: 700px){
+    .inputsContainer{
+        width: 65vw;
+        justify-content: space-around;
+    }
+    .inputs{
+        width: 30vw;
+    }
+    .textarea{
+        width: 30vw;
+    }
+    .submitButton{
+        width: 18vw;
+        height: 5vh;
+    }
+}
+
+
+@media (max-width: 700px) and (min-width: 500px){
+    .inputsContainer{
+        width: 65vw;
+        justify-content: space-between;
+    }
+    .inputs{
+        width: 30vw;
+    }
+    .textarea{
+        width: 30vw;
+    }
+    .submitButton{
+        width: 18vw;
+        height: 5vh;
+    }
+}
+
+@media (max-width: 500px) and (min-width: 300px){
+.inputsContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.inputs{
+    width: 55vw;
+}
+.submitButton{
+    width: 24vw;
+    height: 5vh;
+}
+.textarea{
+    width: 60vw;
+}
+.inputsLeft{
+    align-items: center;
+}
+.formContainer{
+    height: 100%;
+}
+}
